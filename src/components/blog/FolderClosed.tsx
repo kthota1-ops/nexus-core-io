@@ -22,25 +22,25 @@ export const FolderClosed = ({ folder, onClick }: FolderClosedProps) => {
         hover:shadow-[0_0_40px_hsl(var(--cyber-glow)/0.4)]
         transition-all duration-500
         hover:scale-105
-        max-w-xs mx-auto
+        w-40
       `}>
         {/* 2x2 Grid of Thumbnails */}
         <div className="grid grid-cols-2 gap-2 mb-3">
           {displayPosts.map((post, i) => (
             <div 
               key={post.id}
-              className="aspect-square rounded overflow-hidden border border-cyber-glow/20 bg-background/50 backdrop-blur-sm animate-slide-up group-hover:border-cyber-glow/40 transition-all"
+              className="w-12 h-12 rounded overflow-hidden border border-cyber-glow/20 bg-background/50 backdrop-blur-sm animate-slide-up group-hover:border-cyber-glow/40 transition-all"
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               {post.heroImage ? (
                 <img 
                   src={post.heroImage} 
                   alt={post.title}
-                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-cyber-glow/10 to-cyber-pink/10">
-                  <span className="text-4xl">📄</span>
+                  <span className="text-xs">📄</span>
                 </div>
               )}
             </div>

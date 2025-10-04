@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { BootSequence } from "@/components/BootSequence";
 import { MatrixBackground } from "@/components/MatrixBackground";
+import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
@@ -28,6 +29,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen">
+      <Navbar />
       <MatrixBackground />
       <div className="relative z-10">
         <HeroSection />

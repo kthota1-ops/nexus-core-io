@@ -19,7 +19,7 @@ export const AboutSection = () => {
             <p className="text-muted-foreground font-mono">Accessing credential database...</p>
           </div>
 
-          <Card className="bg-card/30 backdrop-blur-xl border-2 border-primary/30 relative overflow-hidden group animate-slide-up">
+          <Card className="bg-card backdrop-blur-xl border-2 border-primary/30 relative overflow-hidden group animate-slide-up">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent opacity-50" />
             <div className="absolute inset-0 cyber-scanline" />
             

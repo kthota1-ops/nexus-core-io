@@ -15,7 +15,7 @@ export const FolderOpen = ({ folder, onClose, onSelectPost }: FolderOpenProps) =
       onClick={onClose}
     >
       {/* Backdrop with blur */}
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-xl" />
+      <div className="absolute inset-0 bg-background/95 backdrop-blur-xl" />
       
       {/* Folder Content */}
       <div 

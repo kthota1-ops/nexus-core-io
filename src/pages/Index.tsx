@@ -11,16 +11,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const Index = () => {
   const [bootComplete, setBootComplete] = useState(false);
 
-  useEffect(() => {
-    const hasBooted = sessionStorage.getItem("bootComplete");
-    if (hasBooted) {
-      setBootComplete(true);
-    }
-  }, []);
-
   const handleBootComplete = () => {
     setBootComplete(true);
-    sessionStorage.setItem("bootComplete", "true");
   };
 
   if (!bootComplete) {

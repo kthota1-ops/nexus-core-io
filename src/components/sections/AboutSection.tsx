@@ -23,7 +23,7 @@ export const AboutSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent opacity-50" />
             <div className="absolute inset-0 cyber-scanline" />
             
-            <div className="relative p-8 md:p-12 space-y-8">
+            <div className="relative p-8 md:p-12 ">
               <div className="flex items-center gap-6">
                 <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-border-pulse overflow-hidden">
                   <img 

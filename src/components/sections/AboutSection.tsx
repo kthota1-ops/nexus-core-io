@@ -25,7 +25,7 @@ export const AboutSection = () => {
             
             <div className="relative p-8 md:p-12 space-y-8">
               <div className="flex items-center gap-6">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-border-pulse">
+                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-border-pulse overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" 
                     alt="Profile"

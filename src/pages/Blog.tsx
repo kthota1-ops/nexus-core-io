@@ -7,8 +7,12 @@ import { FullBlogView } from "@/components/blog/FullBlogView";
 import { TerminalSearch } from "@/components/blog/TerminalSearch";
 import { StandaloneBlogCard } from "@/components/blog/StandaloneBlogCard";
 import { toast } from "sonner";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import { CyberButton } from "@/components/CyberButton";
 
 const Blog = () => {
+  const navigate = useNavigate();
   const [openFolderId, setOpenFolderId] = useState<number | null>(null);
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -96,7 +100,18 @@ const Blog = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Header */}
-          <div className="text-center space-y-4 animate-slide-up">
+          <div className="text-center space-y-6 animate-slide-up">
+            <div className="flex justify-center mb-4">
+              <CyberButton
+                variant="primary"
+                onClick={() => navigate("/")}
+                className="gap-2"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Back to Portfolio
+              </CyberButton>
+            </div>
+            
             <h1 className="text-4xl md:text-6xl font-orbitron font-bold">
               <span className="text-cyber-gold">&lt; THE </span>
               <span className="text-cyber-glow">KNOWLEDGE</span>

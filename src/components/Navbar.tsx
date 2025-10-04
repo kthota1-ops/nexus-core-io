@@ -8,6 +8,8 @@ export const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
+    { name: "Mission Logs", path: "/missions" },
+    { name: "Establish_Uplink", path: "/connect" },
     { name: "Blog", path: "/blog" },
   ];
 

@@ -58,6 +58,13 @@ export default {
           green: "hsl(var(--cyber-green))",
           grid: "hsl(var(--cyber-grid))",
         },
+        tag: {
+          security: "hsl(var(--tag-security))",
+          python: "hsl(var(--tag-python))",
+          devops: "hsl(var(--tag-devops))",
+          hardware: "hsl(var(--tag-hardware))",
+          cloud: "hsl(var(--tag-cloud))",
+        },
       },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],

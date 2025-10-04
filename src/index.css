@@ -37,6 +37,13 @@ All colors MUST be HSL.
     --success: 155 100% 50%;
     --success-foreground: 220 55% 8%;
 
+    /* Tag Colors */
+    --tag-security: 0 100% 65%;
+    --tag-python: 142 76% 50%;
+    --tag-devops: 217 91% 60%;
+    --tag-hardware: 25 95% 60%;
+    --tag-cloud: 280 100% 70%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
@@ -127,5 +134,23 @@ All colors MUST be HSL.
     100% {
       background-position: 0 100%;
     }
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--cyber-glow) / 0.5);
+    border-radius: 4px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--cyber-glow));
   }
 }
